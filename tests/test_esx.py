@@ -10,16 +10,16 @@ from unittest.mock import Mock
 # import requests
 # from mock import patch
 
-from esx import Object
-from esx import Math
-from esx import Global
-from esx import Window
-from esx import Date
-from esx import URL
-from esx import Array
-from esx import String
+from esx.javascript import Object
+from esx.javascript import Math
+from esx.javascript import Global
+from esx.javascript import Window
+from esx.javascript import Date
+from esx.javascript import URL
+from esx.javascript import Array
+from esx.javascript import String
 
-from esx import *
+from esx.javascript import *
 
 
 from inspect import stack
@@ -994,11 +994,11 @@ class TestCase(unittest.TestCase):
         time.sleep(2.5)
         # nice!
 
-        # from esx import setTimeout, clearTimeout
+        # from esx.javascript import setTimeout, clearTimeout
         # setTimeout(somefunc, 2000)
         # time.sleep(2.5)
 
-        # from esx import setInterval, clearInterval
+        # from esx.javascript import setInterval, clearInterval
         # def somefunc2():
             # print("testing interval")
         # interval_id = setInterval(somefunc2, 2000)
@@ -1007,7 +1007,7 @@ class TestCase(unittest.TestCase):
         # time.sleep(4)
         # print('end')
 
-        # from esx import window
+        # from esx.javascript import window
         # intID = window.setInterval(somefunc2, 2000)
         # time.sleep(10)
         # clearInterval(intID)  # not clearing brings it back to life!
@@ -1055,11 +1055,6 @@ class TestCase(unittest.TestCase):
     #     assert symbol.toString() == 'x'
     #     assert symbol.toNumber() == 0
     #     assert symbol.toString(True) == '0'
-
-
-    def test_rename_module():
-        pass
-
 
 
 

@@ -14,21 +14,21 @@
 
 #### Contains
 
-• [esx](https://esx.readthedocs.io/_modules/esx/esx.html) : js API in python 3 😳
+• js API in python 3
 
 
 #### API
 
 
 ```python
-from esx import Math
+from esx.javascript import Math
 print(Math.random())
 
-from esx import Array
+from esx.javascript import Array
 myArr=Array(1,2,3)
 print(myArr.splice(1))
 
-from esx import URL
+from esx.javascript import URL
 url = URL('https://somesite.com/blog/article-one#some-hash')
 print(url.protocol)
 print(url.host)
@@ -36,12 +36,12 @@ print(url.pathname)
 print(url.hash)
 
 # you can use Global class to import all the js methods from the global namespace i.e
-# from esx.esx import Global
+# from esx.javascript.esx import Global
 # Global.decodeURIComponent(...
 # Global.encodeComponent(...
 # Global.setInterval(...
 
-# from esx.esx import Date, String, Number
+# from esx.javascript.esx import Date, String, Number
 # etc..
 ```
 
@@ -49,7 +49,7 @@ You can use setInterval and clearInterval with params
 
 ```python
 
-from esx import setInterval, clearInterval
+from esx.javascript import setInterval, clearInterval
 
 x=0
 
@@ -70,7 +70,7 @@ Or for a single delayed function call use setTimeout, clearTimeout
 
 ```python
 
-from esx import setTimeout, clearTimeout
+from esx.javascript import setTimeout, clearTimeout
 
 timeoutID = setTimeout(hi, 1000)
 
@@ -82,8 +82,7 @@ https://esx.readthedocs.io/
 
 ### notes
 
-Do some notes here
-
+currently forking over from domonic.
 
 ### Join-In
 Feel free to contribute if you find it useful.
