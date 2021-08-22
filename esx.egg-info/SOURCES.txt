@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+esx.py
+setup.cfg
+setup.py
+esx.egg-info/PKG-INFO
+esx.egg-info/SOURCES.txt
+esx.egg-info/dependency_links.txt
+esx.egg-info/requires.txt
+esx.egg-info/top_level.txt
+tests/.DS_Store
+tests/test_esx.py
