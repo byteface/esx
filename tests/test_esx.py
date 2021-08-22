@@ -1057,6 +1057,13 @@ class TestCase(unittest.TestCase):
     #     assert symbol.toString(True) == '0'
 
 
+    def test_rename_module():
+        pass
+
+
+
+
+
 _intID = None
 _results = []
 
